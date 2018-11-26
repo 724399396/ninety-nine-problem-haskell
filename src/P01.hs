@@ -3,6 +3,6 @@ module P01 (
            ) where
 
 myLast :: [a] -> a
-myLast [] = error "myLast: empty list"
-myLast [x] = x
+myLast []       = error "myLast: empty list"
+myLast [x]      = x
 myLast (_ : xs) = myLast xs
