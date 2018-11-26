@@ -12,5 +12,5 @@ main = hspec $ do
     it "return the last element of an *arbitrary* list" $
       property $ \x xs -> myLast(xs++[x]) == (x :: Int)
 
-  it "throws an exception if used with an empty list" $
+    it "throws an exception if used with an empty list" $
       evaluate (myLast []) `shouldThrow` anyException
